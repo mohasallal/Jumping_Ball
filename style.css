@@ -1,0 +1,86 @@
+body {
+  width: 99vw;
+  height: 98.25vh;
+  max-height: 100%;
+  max-width: 100%;
+  background: linear-gradient(90deg, #2d388a, #00aeef);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Ball {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(158, 155, 0);
+  border-radius: 50%;
+  background: linear-gradient(
+    230deg,
+    #ffa500,
+    #ffbb00,
+    #ffd000,
+    #fffb00,
+    #c4c000
+  );
+  box-shadow: 0.1rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  animation: jumping 4s infinite;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(20px);
+    height: 120px;
+    width: 180px;
+  }
+
+  24% {
+    width: 150px;
+  }
+
+  33% {
+    height: 170px;
+    width: 150px;
+  }
+
+  35% {
+    transform: translateY(-200px);
+    width: 150px;
+    height: 170px;
+  }
+
+  45% {
+    transform: translateY(20px);
+    height: 140px;
+    width: 160px;
+  }
+
+  55% {
+    transform: translateY(-100px);
+    width: 155px;
+    height: 160px;
+  }
+
+  60% {
+    height: 160px;
+  }
+
+  73% {
+    transform: translateY(0px);
+    width: 150px;
+    height: 150px;
+  }
+
+  80% {
+    transform: translateY(-50px);
+    width: 150px;
+    height: 150px;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
